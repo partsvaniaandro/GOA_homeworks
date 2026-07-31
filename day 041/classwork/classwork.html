@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button1">click me</button>
+    <p id="p1">this is a paragraph</p>
+    <script>
+        const friend1 = {
+            age: 15,
+            name: "giorgi",
+            height: 180,
+            type: "close friend",
+            living_place: "far"
+        }
+        const friend2 = {
+            age: 13,
+            name: "lazare",
+            height: 165,
+            type: "best friend",
+            living_place: "close"
+        }
+        const friend3 = {
+            age: 14,
+            name: "saba",
+            height: 178,
+            type: "close friend",
+            living_place: "far"
+        }
+        friend1.age += 1
+        friend2.same_school = true
+        delete friend3.living_place
+        console.log(friend1)
+        console.log(friend2)
+        console.log(friend3)
+        <!--ობიექტი არის სტრუქტურა რომელშიც არის ცვლადები, მათ აქვთ სახელები და მნიშვნელობები, ობიექტები იწერება დაკლაკნილი ფრჩხილებით-->
+
+        const p = document.getElementById("p1");
+        p.style.color = "red";
+        const button = document.getElementById("button1")
+        button.style.backgroundColor = "blue";
+        
+    </script>
+</body>
+</html>

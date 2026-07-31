@@ -1,0 +1,24 @@
+body{
+    background-color: lightgoldenrodyellow;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.profiles{
+    width: 600px;
+    height: 200px;
+    background-color: lightgreen;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

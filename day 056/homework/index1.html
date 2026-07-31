@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body class="body">
+
+    <div class="input_fields">
+        <label for="email_input" id="email_label">email (optional)</label><br>
+        <input type="email" id="email_input" placeholder="*"><br>
+        <label for="pass_input" id="pass_label">password</label><br>
+        <input type="password" id="pass_input" placeholder="*"><br>
+        <input type="checkbox" id="agree">
+        <label for="agree">do you agree with our terms and conditions</label>
+    </div>
+    <div class="hints">
+        <p id="symbols">your password must contain letters and "-._" symbols</p>
+        <p id="pass_length">your password must be 4-12 long in symbols</p>
+        <p id="empty_spaces">your password must not contain empty spaces</p>
+    </div>
+    <div class="check_button">
+        <button id="check_pass">register</button>
+    </div>
+
+    <p id="message"></p>
+
+    <script src="index1.js" defer></script>
+</body>
+</html>

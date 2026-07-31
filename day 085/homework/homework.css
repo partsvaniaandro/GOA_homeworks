@@ -1,0 +1,18 @@
+@keyframes scaleChange{
+    0%{
+        font-size: 16px;
+    }
+    50%{
+        font-size: 32px;
+        margin: 30px;
+    }
+    100%{
+        font-size: 16px;
+    }
+}
+#hello{
+    animation: scaleChange 4s ease-in infinite;
+}
+#world{
+    animation: scaleChange 4s ease-out infinite;
+}

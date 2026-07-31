@@ -1,0 +1,81 @@
+.body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    margin-top: 200px;
+  }
+
+
+
+#pass_input{
+    border: none;
+    border: solid 2px gray;
+    width: 500px;
+    border-radius: 5px;
+    height: 25px;
+    transition: 0.3s ease;
+}
+#pass_input:hover{
+    border: solid 2px darkslategray;
+}
+#pass_input:focus{
+    border: solid 2px blue;
+    outline: none;
+    transform: scale(1.05);
+}
+#pass_label:hover ~ #pass_input{
+    border: solid 2px darkslategray;
+}
+
+
+
+
+#email_input{
+    border: none;
+    border: solid 2px gray;
+    width: 500px;
+    border-radius: 5px;
+    height: 25px;
+    transition: 0.3s ease;
+    margin-bottom: 30px;
+}
+#email_input:hover{
+    border: solid 2px darkslategray;
+}
+#email_input:focus{
+    border: solid 2px blue;
+    outline: none;
+    transform: scale(1.05);
+}
+#email_label:hover ~ #email_input{
+    border: solid 2px darkslategray;
+}
+
+.hints{
+    color: red;
+}
+#message{
+    font-size: 30px;
+    text-align: center;
+}
+#check_pass{
+    border: none;
+    border: solid 2px gray;
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease;
+}
+#check_pass:hover{
+    transform: scale(1.05);
+}
+#check_pass:active{
+    transform: scale(1);
+    background-color: lightblue;
+}

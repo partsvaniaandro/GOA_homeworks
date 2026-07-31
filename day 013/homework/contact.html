@@ -1,0 +1,33 @@
+<!--3) შექმენით საიტი სადაც გექნებათ 2 გვერდი (მთავარი და საკონტაქტო), საკონტაქტო გვერდძე გამოიტანეთ ფორმა სადაც მომხმარებელმ,ა უნდა შეიტანოს თავისი ემაილი, სახელი გვარი და მესიჯი, ყველა შესატანი ველი აუცილებელია რომ იყოს შევსებული + გამოიყენეთ label ელემენტი და ახსენით რას აკეთებს label, for, id, placeholder, type და required-->
+<html>
+    <head>
+        <title>
+            contact
+        </title>
+        <body>
+            <nav>
+                <a href="home.html" target="_blank">>back to home<</a>
+            </nav>
+            <h1>this is our contact page</h1>
+            <h3>if you want to contact us. please fill in theese forms:</h3>
+            <form>
+                <label for="name">your name:</label><br>
+                <input type="text" id="name" name="name" placeholder="name" required><br>
+                <label for="surname">your surname:</label><br>
+                <input type="text" id="surname" name="surname" placeholder="surname" required><br>
+                <label for="email">your email:</label><br>
+                <input type="email" id="email" name="email" placeholder="email" required><br>
+                <label for="message">send us a message:</label><br>
+                <textarea id="message" name="message" placeholder="your message"></textarea>
+                <input type="submit">   
+            </form>
+        </body>
+    </head>
+</html>
+<!--label არის სათაური რომელიც კავშირდება input-თან უნიკალური id-ს დახმარებით
+id კავშირდება for-თან იმ სახელით რაც for-ში წერია-->
+<!--placeholder არის ტექსტი რომელიც დროებით ეწერება input-ში სანამ ტექსტი არ დაიწერება-->
+<!--type არის ატრიბუტი რომელიც input-ს აძლევს სხვადასხვა ნაირ შეხედულებას და სხვადასხვა უნარს. ყველა ტიპი
+ერთმანეთისგან განსხვავდება უნარებით და ხანდახან ვიზუალურადაც-->
+<!--required არის ატრიბუტი რომელიც ანიშნებს კომპიუტერს რომ input-ი რომელსაც ეს ატრიბუტი მინიჭებული აქვს არის
+აუცილებელი და მის გარეშე submit ვერ მოხდება.-->

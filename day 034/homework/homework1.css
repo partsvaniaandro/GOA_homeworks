@@ -1,0 +1,15 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 200px;
+    margin-left: 550px;
+    animation: box_animation 10s infinite ease-out;
+}
+
+@keyframes box_animation {
+    30% {background-color: blue;}
+    60% {width: 400px;}
+    90% {height: 400px;}
+    
+}

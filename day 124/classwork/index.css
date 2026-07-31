@@ -1,0 +1,22 @@
+.div{
+    width: 200px;
+    height: 100px;
+    background-color: green;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+#divs{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.innerDiv{
+    width: 100px;
+    height: 100px;
+    background:blue;
+}

@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0FFF0;
+    color: #4C8B7B;
+}
+.mainwrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #93C572;
+    color: #4C8B7B;
+    height: 800px;
+    width: 1000px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.numInput input{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid #D0F0C0 1px;
+    background-color: #ACE1AF;
+    color: #4C8B7B;
+    outline: none;
+    margin: 10px;
+}
+.clear button{
+    height: 30px;
+    width: 100px;
+    background-color: #ACE1AF;
+    border: solid #D0F0C0 1px;
+    color: #4C8B7B;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s ease;
+}
+.clear button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.clear button:active{
+    transform: scale(1);
+}
+.clear{
+    margin-top: 200px;
+}
+.addBtn button{
+    height: 30px;
+    width: 100px;
+    background-color: #ACE1AF;
+    border: solid #D0F0C0 1px;
+    color: #4C8B7B;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s ease;
+}
+.addBtn button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.addBtn button:active{
+    transform: scale(1);
+}
+.list{
+    background-color: #ACE1AF;
+    color: #4C8B7B;
+    border: solid #D0F0C0 1px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,21 @@
+/* კოდი დავწეროთ და გავტესტოთ თუ შვილიშვილ ელემნტს გაეწერბა გრიდი თუ მხოლოდ მის "grandparent"ს აქვს display: grid */
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    background-color: green;
+}
+.child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: yellow;
+}
+.grandchild{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: blue;
+}

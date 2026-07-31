@@ -1,0 +1,67 @@
+<body>
+  <div class = 'row1'>
+    <div class = 'd11'></div>
+    <div class = 'd21'></div>
+  </div>
+  <div class = 'row2'>
+    <div class = 'd12'></div>
+    <div class = 'd22'></div>
+    <div class = 'd32'></div>
+  </div>
+  <div class = 'row3'>
+    <div class = 'd13'></div>
+  </div>
+</body>
+<style>
+  .d11, .d21, .d12, .d22, .d32, .d13{
+    width: 30px;
+    height: 60px;
+    background: #4B4D88;
+  }
+  body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  .row1{
+    margin-top:44px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:165px;
+  }
+  .row2{
+    margin-top:8px;
+    width:165px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between
+  }
+  .d11, .d21{
+    border-radius:20px;
+  }
+  .d12, .d22, .d32{
+    border-radius:20px;
+  }
+  .d11{
+    transform: rotate(-45deg)
+  }
+  .d21{
+    transform: rotate(45deg)
+  }
+  .d12{
+    transform: rotate(-45deg);
+    margin-top: 32px;
+  }
+  .d32{
+    transform: rotate(45deg);
+    margin-top: 32px;
+  }
+  .d13{
+    width:252px;
+    height:30px;
+    border-radius:20px;
+    margin-top:18px;
+  }
+</style>

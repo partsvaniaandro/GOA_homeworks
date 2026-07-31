@@ -1,0 +1,105 @@
+body{
+    background:#e1e9ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px #888888;
+    transition: 0.2s ease;
+}
+.main:hover{
+    box-shadow: 3px 3px 20px #888888;
+}
+.topImage img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+.title p{
+    font-size: 30px;
+    font-weight: 600;
+    color: #112047;
+}
+.info p{
+    opacity: 60%;
+    line-height: 25px;
+    color: #112047;
+}
+.priceBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    background-color: #f8f9fe;
+    border-radius: 10px;
+}
+.tuneIcon{
+    width: 50px;
+    height: 50px;
+    background-color: #dee6fd;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan p{
+    font-weight: 600;
+    font-size: 18px;
+    color: #112047;
+}
+.price p{
+    opacity: 60%;
+}
+.changePlan a{
+    font-weight: 600;
+}
+.payment{
+    width: 80%;
+    margin-top: 30px;
+}
+.payment button{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #382ae1;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 10px 10px #888888;
+    transition: 0.2s ease;
+}
+.payment button:hover{
+    background-color: #4a3cff;
+    cursor: pointer;
+}
+.cancel{
+    width: 100%;
+    margin-top: 40px;
+}
+.cancel a{
+    font-size: 16;
+    font-weight: 600;
+    color: #9198b4;
+    text-decoration: none;
+}

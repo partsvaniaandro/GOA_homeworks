@@ -1,0 +1,48 @@
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 84c2aea9c2774b8e311cb717e2805bc08d9ad00b
+table td {
+    padding: 20px;
+    border: 1px solid black; 
+    border-radius: 5px;
+    border-collapse: collapse;
+  }
+  
+  
+  
+  
+  
+
+  table tr:nth-child(-n+3) {
+    background-color: lightgray;
+    color: green;
+  }
+
+  table tr:nth-child(-n+2) {
+    background-color: white;
+    color: black;
+  } 
+
+  
+  
+
+  table tr:nth-child(-n+1) {
+    background-color: darkgreen; 
+    color: lightgreen;
+  }
+
+  rable tr{
+    border-radius: 10px;
+<<<<<<< HEAD
+  }
+=======
+  }
+
+
+ 
+>>>>>>> 84c2aea9c2774b8e311cb717e2805bc08d9ad00b

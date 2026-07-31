@@ -1,0 +1,42 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color: darkcyan;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav img{
+    width: 150px;
+    transition: 0.5s ease;
+}
+
+.nav img:hover{
+    transform: scale(1.05);
+}
+.nav a{
+    text-decoration: none;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 2px;
+}
+.links{
+    text-decoration: none;
+}
+.button{
+    transition: 0.5s ease;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px){
+    body{
+        font-size: 50%;
+    }
+}
+@media (max-width: 200px){
+    body{
+        font-size: 20%;
+    }
+}
+

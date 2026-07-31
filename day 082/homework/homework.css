@@ -1,0 +1,41 @@
+body{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    background-color: #E8F5E9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #1B5E20;
+}
+.button{
+    background-color: #C8E6C9;
+    border: solid 2px #A5D6A7;
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    transition: 0.2s ease;
+    color: #2E7D32;
+}
+.button:hover{
+    background-color: #A5D6A7;
+    border: solid 2px #81C784;
+    color: #1B5E20;
+
+    transform: scale(1.05);
+}
+#timeInput{
+    margin-top: 100px;
+    outline: none;
+    color: #2E7D32;
+    margin-bottom: 30px;
+    background-color: #C8E6C9;
+    width: 300px;
+    height: 30px;
+    border: solid 2px #A5D6A7;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+}
+  

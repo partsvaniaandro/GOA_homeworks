@@ -1,0 +1,20 @@
+.border{
+    border: solid 3px black;
+    width: 1500px;
+    height: 30px;
+    margin-top: 300px;
+}
+.loading{
+    background-color: blue;
+    height: 30px;
+    width: 0%;
+    transition: 10s ease;
+}
+
+
+
+
+.border:hover .loading{
+    width: 1500px;
+    transition-delay: 3s;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="lightDark">
+        <i class='bx bxs-sun' id="sun"></i>
+        <button id="lightModeBtn"></button>
+        <button id="darkModeBtn"></button>
+        <i class='bx bxs-moon' id="moon"></i>
+    </div>
+    <div class="inputs">
+        <input type="number" id="ageInput">
+        <input type="color" id="colorInput">
+    </div>
+    <div class="calcMainWrap">
+        <div class="upperCalc">
+            <div class="output"><p id="calcOutput"></p></div>
+        </div>
+        <div class="lowerCalc">
+            <div class="numbers">
+                <div class="row1">
+                    <button id="1"value="1">1</button>
+                    <button id="2"value="2">2</button>
+                    <button id="3"value="3">3</button>
+                </div>
+                <div class="row2">
+                    <button id="4" value="4">4</button>
+                    <button id="5"value="5">5</button>
+                    <button id="6"value="6">6</button>
+                </div>
+                <div class="row3">
+                    <button id="7"value="7">7</button>
+                    <button id="8"value="8">8</button>
+                    <button id="9"value="9">9</button>
+                </div>
+                <!------>
+                <div class="row4">
+                    <button id="0"value="0">0</button>
+                    <button id="."value=".">.</button>
+                    <button id="=">=</button>
+                </div>
+                <div class="row5">
+                    <button id="delete">DEL</button>
+                </div>
+            </div>
+            <div class="operations">
+                <button id="/"value="/">/</button>
+                <button id="*"value="*">*</button>
+                <button id="-"value="-">-</button>
+                <button id="+"value="+">+</button>
+                <button id="clear">CLEAR</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

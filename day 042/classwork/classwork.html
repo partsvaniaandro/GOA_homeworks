@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="classwork.js">
+    <script src="classwork.js"></script>
+</head>
+<body>
+<script>
+        const count = document.getElementById("count");
+    const increase = document.getElementById("increase");
+    const decrease = document.getElementById("decrease");
+    let number = 0;
+
+    decrease.addEventListener('click', function() {
+        number = number - 1
+        count.textContent = number
+    })
+    increase.addEventListener('click', function() {
+        number = number + 1
+        count.textContent = number
+    })
+</script>
+    <button id="decrease">decrease</button>
+    <p id="count">0</p>
+    <button id="increase">increase</button>
+</body>
+</html>

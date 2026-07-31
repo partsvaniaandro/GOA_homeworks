@@ -1,0 +1,60 @@
+#root{
+    color: #E4E4E7;
+}
+header, main, footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button{
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:#5284A0;
+    transition: 0.2s ease;
+}
+button:hover{
+    background-color: #3B82F6;
+    cursor: pointer;
+}
+main{
+    background-color: #0E0E10;
+}
+header, footer{
+    background-color: #1A1B1F;
+}
+#mainImg{
+    width: 600px;
+    height: 550px;
+}
+#mainButtons{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    color: #E4E4E7;
+}
+#box{
+    width: 300px;
+    height: 300px;
+    background-color: #1A1B1F;
+    margin-bottom: 100px;
+}
+#innerBox{
+    width: 200px;
+    height: 200px;
+    background-color: #2A2A2E;
+}
+#innerInnerBox{
+    width: 100px;
+    height: 100px;
+    background-color: #3B82F6;
+}
+#catGif{
+    width: 600px;
+    height: 550px;
+}

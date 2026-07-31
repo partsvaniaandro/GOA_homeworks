@@ -1,0 +1,29 @@
+body{
+    background-color: darkcyan;
+}
+#userInput {
+    border: none;
+    width: 800px;
+    height: 30px;
+    text-align: center;
+    border: solid gray 2px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+#userInput:hover{
+    border: solid darkslategray 2px;
+}
+#enter{
+    border: none;
+    width: 250px;
+    border: solid gray 2px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+#enter:hover{
+    transform: scale(1.05);
+}
+#userText{
+    margin-top: 200px;
+}

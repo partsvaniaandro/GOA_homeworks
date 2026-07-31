@@ -1,0 +1,59 @@
+body{
+    text-align: center;
+    background-color: #F0D9FF;
+}
+.number_display{
+    font-size: 50px;
+}
+.workspace{
+    margin-top: 350px;
+}
+#plus{
+    border: none;
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    margin-right: 20px;
+    font-size: 25px;
+    transition: 0.2s ease;
+}
+#minus{
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    font-size: 25px;
+    transition: 0.2s ease;
+}
+#plus:hover{
+    background-color: lightgray;
+}
+#minus:hover{
+    background-color: lightgray;
+}
+#minus:active{
+    background-color: white;
+    border: solid 2px blue;
+}
+#plus:active{
+    background-color: white;
+    border: solid 2px blue;
+}
+#restart{
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    font-size: 25px;
+    transition: 0.2s ease;
+    margin-top: 40px;
+}
+#restart:hover{
+    background-color: lightgray;
+}
+#restart:active{
+    background-color: white;
+    border: solid 2px blue;
+}

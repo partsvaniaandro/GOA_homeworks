@@ -1,0 +1,35 @@
+body{
+    background:#F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 30px;
+}
+#plusButton, #minusButton{
+    width: 90px;
+    height: 30px;
+    transition: 0.2s ease;
+    outline: none;
+}
+#plusButton:hover, #minusButton:hover{
+    background-color: lightgray;
+    outline: none;
+    border: 1px black solid;
+    border-radius: 3px;
+}
+#countParagraph{
+    font-size: 24px;
+}
+#checkInput{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

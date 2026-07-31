@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border-radius: 100%;
+}
+.rectangle{
+    width: 400px;
+    height: 200px;
+    background-color: darkcyan;
+}
+
+.triangle{
+    width: 0; 
+    height: 0; 
+    border-top: 0px solid transparent;
+    border-bottom: 200px solid green;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+  }
+.oval{
+    width: 400px;
+    height: 200px;
+    background-color: lightcoral;
+    border-radius: 100%;
+}
+.heart{
+    display: flex;
+    flex-direction: row;
+}
+.heart1{
+    position: relative;
+    left: 30px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    rotate: -46deg;
+    width: 100px;
+    height: 150px;
+    background-color: red;
+}
+.heart2{
+    position: relative;
+    right: 30px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    rotate: 46deg;
+    width: 100px;
+    height: 150px;
+    background-color: red;
+}
+
+
+
+.moon{
+    display: flex;
+    flex-direction: row;
+}
+.moon1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: goldenrod;
+}
+.moon2{
+    position: relative;
+    top: 25px;
+    right: 125px;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+}

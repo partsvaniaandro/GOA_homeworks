@@ -1,0 +1,6 @@
+.classDiv:hover{
+    transform: scale(1.1);
+}
+#IdDiv:hover{
+    transform: scale(1.1);
+}

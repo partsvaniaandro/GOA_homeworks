@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="num1" type="number" placeholder="num1">
+  <input id="num2" type="number" placeholder="num2">
+  <button onclick="calc()">Add</button>
+  <p id="result"></p>
+
+  <script>
+    async function calc() {
+      const num1 = document.getElementById('num1').value
+      const num2 = document.getElementById('num2').value
+
+      const res = await fetch(`/calculate?num1=${num1}&num2=${num2}`)
+      const data = await res.json()
+
+      document.getElementById('result').textContent = JSON.stringify(data)
+    }
+  </script>
+</body>
+</html>

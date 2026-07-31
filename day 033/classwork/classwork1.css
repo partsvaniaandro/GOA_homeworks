@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    margin-top: 300px;
+}
+
+.notification {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+.notification .number {
+    position: relative;
+    top: -15px;
+    right: -20px;
+    padding:5px 10px;
+    border: solid white 1px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,17 @@
+.loading_bar {
+    border: solid black 2px;
+    width: 1520px;
+    height: 30px;
+}
+
+.fill {
+    background-color: blue;
+    width: 0%;
+    height: 100%;
+    animation: filling 10s 1 linear;
+    animation-delay: 2s;
+}
+
+@keyframes filling {
+    100% {width: 1520;}
+}

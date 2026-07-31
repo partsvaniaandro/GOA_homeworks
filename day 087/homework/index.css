@@ -1,0 +1,125 @@
+body{
+    background:  #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #E5E5E5;
+    transition: 1s ease;
+}
+.displayLangIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1A1A40;
+    border: solid #2E2E2E 2px;
+    width: 600px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 10px;
+    transition: 1s ease;
+}
+.buttons{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}.buttons button{
+    width: 150px;
+    height: 25px;
+    margin: 5px;
+    background-color: #4B6CB7;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+    color: #E5E5E5;
+}
+.buttons button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.buttons button:active{
+    transform: scale(1);
+}
+.langIcon{
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+
+.displayInput{
+    margin: 10px;
+    background-color: #1A1A40;
+    border: solid #2E2E2E 2px;
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 1s ease;
+}
+.inputs input{
+    width: 200px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #4B6CB7;
+    color: #E5E5E5;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+}
+.inputs input:focus{
+    outline: solid 2px #2E2E2E;
+    transform: scale(1.15);
+}
+.displayBtn button{
+    width: 150px;
+    height: 25px;
+    margin: 5px;
+    background-color: #4B6CB7;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+    color: #E5E5E5;
+}
+.displayBtn button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.displayBtn button:active{
+    transform: scale(1);
+}
+#light{
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    transition: 0.2s ease;
+}
+#light:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#dark{
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    transition: 0.2s ease;
+    background-color: goldenrod;
+}
+#dark:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

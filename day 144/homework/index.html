@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="flex justify-center items-center flex-col">
+    <!--tailwind css გამოიყენება იმისთვის რომ css კოდი დაიწეროს კოდში ცალკე ფაილის გარეშე და შედარებით ბევრად მოკლედ-->
+    <header class="w-[100%] flex justify-center flex-col">
+        <nav class='flex justify-between items-center bg-[#B0B0B0] w-[100%] h-[50px] pl-[30px] pr-[30px]'>
+            <div><p>logo</p></div>
+            <div><p>menu</p></div>
+            <div><button>Sign Up</button></div>
+        </nav>
+    </header>
+    <main class="w-[100%] flex justify-center flex-col items-center">
+        <p>flex wrap</p>
+        <div class="w-[100%] flex justify-evenly items-center [100px] mt-[100px] flex-wrap">
+            <div class="w-[200px] h-[200px] bg-[#B0B0B0] rounded-[10px] m-[10px]"></div>
+            <div class="w-[200px] h-[200px] bg-[#B0B0B0] rounded-[10px] m-[10px]"></div>
+            <div class="w-[200px] h-[200px] bg-[#B0B0B0] rounded-[10px] m-[10px]"></div>
+            <div class="w-[200px] h-[200px] bg-[#B0B0B0] rounded-[10px] m-[10px]"></div>
+        </div>
+        <div class="border-b-4 border-[red] p-4 bg-[#B0B0B0] rounded-[10px] m-[10px]">
+            bottom border
+        </div>
+        <div class="border-8 border-double border-[blue] p-4 bg-[#B0B0B0] rounded-[10px] m-[10px]">
+            double border
+        </div>
+        <p>rounded-full</p>
+        <div class="w-16 h-16 bg-[#B0B0B0] rounded-full"></div>
+        <p class="text-[28px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[purple] via-[blue] to-[red]">
+            GRADIENT TEXT
+        </p>
+    </main>
+</body>
+</html>

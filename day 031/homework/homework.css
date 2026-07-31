@@ -1,0 +1,91 @@
+.main {
+    display: flex;
+    border: solid 1px black;
+    height: 550px;
+    width: 1100px;
+    margin-top: 40px;
+    margin-left: 120px;
+    border-radius: 10px;
+
+}
+
+.box1 {
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    border: solid 2px black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.box2 {
+    width: 50%;
+    text-align: center;
+    background-color: blueviolet;
+    border: solid 2px black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.box2_forms input {
+    text-align: center;
+    margin-top: 30px;
+    width: 400px;
+    height: 25px;
+    border: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.male_female {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.submit input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+.submit input:hover {
+    transform: scale(1.04);
+}
+
+.box2_forms input:hover {
+    transform: scale(1.02);
+}
+
+.box1_forms input {
+    text-align: center;
+    margin-top: 30px;
+    width: 400px;
+    height: 25px;
+    border: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.box1_forms input:hover {
+    transform: scale(1.02);
+}
+
+.box1_button input{
+    margin-top: 30px;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.box1_button input:hover {
+    transform: scale(1.02);
+}
+
+.info {
+    font-size: 20px;
+    margin-top: 110px;
+}

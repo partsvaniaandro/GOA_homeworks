@@ -1,0 +1,12 @@
+.box{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: 600px;
+}
+
+.box:hover{
+    transform: rotate(45deg) scale(2);;
+}
+

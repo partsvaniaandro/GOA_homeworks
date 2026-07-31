@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+
+    <input type="text" id="input" placeholder="new todo" />
+    <button onclick="addTodo()">add</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        const API = 'http://localhost:3008/todos'
+
+        async function loadTodos() {
+            const res = await fetch(API)
+            const todos = await res.json()
+            const list = document.getElementById('list')
+            list.innerHTML = ''
+            todos.forEach(el => {
+                const li = document.createElement('li')
+                li.textContent = el.text + ' '
+
+                const btn = document.createElement('button')
+                btn.textContent = 'delete'
+                btn.onclick = () => deleteTodo(el.id)
+
+                li.appendChild(btn)
+                list.appendChild(li)
+            });
+        }
+
+        async function addTodo() {
+            const input = document.getElementById('input')
+            if(!input.value.trim()) return;
+
+            await fetch(API, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ text: input.value})
+            })
+            input.value = ''
+            loadTodos()
+        }
+        async function deleteTodo(id) {
+            await fetch(`${API}/${id}`, { method: 'DELETE' })
+            loadTodos()
+        }
+
+    </script>
+</body>
+</html>
