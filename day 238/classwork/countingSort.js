@@ -1,28 +1,37 @@
 const unsortedArr = [6, 1, 7, 1, 3, 5, 3, 6, 1, 5, 0, 3, 5, 1, 7, 2, 2, 7, 5, 3, 6, 0]
+//? counting sort მუშაობს შემდეგ ნაირად:
 
+//! findBiggest() ფუნქციით ვპოულობთ array-ში უდიდეს რიცხვს, რომელიც დაგვეხმარება იმის დადგენაში, თუ შემდეგ ჩვენ counts array-ს
+//! რამხელა სიგრძე უნდა ჰქონდეს.
 function findBiggest(arr){
-    let biggest = arr[0]
-    for(let i = 1; i< arr.length; i++){
-        if(arr[i] > biggest){
-            biggest = arr[i]
+    let biggest = arr[0] //* იქმნება უდიდესი რიცხვის ცვლადი და მის მნიშვნელობად ვაყენებთ array-ში 0 ინდექსზე მდგომს.
+    for(let i = 1; i< arr.length; i++){ //* იქმნება ციკლი, რომლისგანაც გავიგებთ უდიდეს რიცხვს.
+        if(arr[i] > biggest){ //* ამჟამინდელ biggest ცვლადში შენახულ რიცხვს ვადარებთ array-ში შემდეგ ინდექსზე მდგომ რიცხვს.
+            biggest = arr[i] //* თუ შემდეგი რიცხვი ამჟამინდელზე მეტია, ცვლადის ახალ მნიშვნელობად ვაყენებთ შემდეგ რიცხვს.
         }
     }
-    return biggest
+    return biggest //? ვაბრუნებთ უდიდესს რიცხვს.
 }
-const biggestNum = findBiggest(unsortedArr)
-const counts = new Array(biggestNum + 1).fill(0)
 
+const biggestNum = findBiggest(unsortedArr) //* ვიძახებთ findBiggest ფუნქციას და ვინახავთ უდიდეს რიცხვს biggestNum ცვლადში.
+const counts = new Array(biggestNum + 1).fill(0) //* ვქმნით ახალ array-ს ჩაშენებული constructor-ით. მისი სიგრძე უდრის უდიდესი რიცხვის 1-ით მეტს
+//* და ამ array-ს ვავსებთ 0-ებით
+//! ერთით მეტს იმიტომ, რომ counts array-ში გვინდა რომ უდიდესი რიცხვამდე იყოს ინდექსები და არა სიგრძე.
+
+
+//! countingSortNumbers ფუნქციით თითო რიცხვისთვის განკუთვნილ ინდექსზე მყოფ 0-ს ვზრდით 1-ით და შემდეგ იმავე array-ს ვხმარობთ რომ sorted array-ში
+//! დალაგებულად შევიტანოთ რიცხვები.
 function countingSortNumbers(arr, counts){
-    for(let i = 0; i < arr.length; i++){
+    for(let i = 0; i < arr.length; i++){ //* იქმნება loop რითიც გადავუყვებით unsortedArr-ს (დაულაგებელ array-ს) და თითო რიცხვზე თავისივე თავის ინდექსზე მდგომ 0-ს ვუმატებთ 1-ს
         counts[arr[i]] += 1
     }
-    const sorted = []
-    for(let i = 0; i < counts.length; i++){
-        for(let j = 0; j < counts[i]; j++){
-            sorted.push(i)
-        }
+    const sorted = [] //* ვქმნით ახალ ცვლადს სადაც ამჯერად დალაგებულად ჩავსვავთ რიცხვებს
+    for(let i = 0; i < counts.length; i++){ //* გადავუყვებით counts array-ს
+        for(let j = 0; j < counts[i]; j++){ //* თითო ელემენტზე შიგა loop გამოიძახება, counts array-ში რომელ რიცხვზეც ვართ გაჩერებული, იმდენჯერ ემატება sorted array-ში i.
+            sorted.push(i) //* მაგალითად: რიცხვი 0 დაემატებოდა 2-ჯერ, რადგან 0 ინდექსზე მდგომი რიცხვი იქნებოდა 2 (რადგან 2 ცალი '0' გვაქვს დასაწყის array-ში). 2-ჯერ დაემატებოდა sorted array-ში i, რომელიც ამჯერად უდრის 0-ს.
+        }//* ანუ 0 დაემატა იმდენჯერ რამდენიც დასაწყის array-ში გვქონდა. იგივე გამეორდება სხვა რიცხვებზე. 
     }
-    return sorted
+    return sorted //* ვაბრუნებთ დალაგებულ array-ს
 }
 
 console.log(countingSortNumbers(unsortedArr, counts))

@@ -4,7 +4,7 @@
 from turtle import*
 
 width(2)
-speed(1000)
+speed(300)
 
 bgcolor("deepskyblue")
 
